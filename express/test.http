@@ -1,0 +1,53 @@
+get http://localhost:8000/
+
+###
+get http://localhost:8000/hello/
+
+###
+get http://localhost:8000/10
+
+###
+get http://localhost:8000/qs?p1=aa&p2=bb
+
+###
+post http://localhost:8000/hello
+
+###
+post http://localhost:8000/post-req
+Content-Type: application/json; charset=UTF-8
+
+{
+    "name": "이름입니다",
+    "age": 11
+}
+
+###
+get http://localhost:8000/nations/list
+
+###
+get http://localhost:8000/nations/4
+
+###
+post http://localhost:8000/nations/save
+Content-Type: application/json; charset=UTF-8
+
+{
+    "name": "미국",
+    "capital": "워싱턴DC",
+    "population": 331900000
+}
+
+###
+put http://localhost:8000/nations/1
+Content-Type: application/json; charset=UTF-8
+
+{
+    "id": 1,
+    "name": "대한민국",
+    "capital": "서울",
+    "population": 52000000
+}
+
+###
+delete http://localhost:8000/nations/4
+
