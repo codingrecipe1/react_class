@@ -15,4 +15,8 @@ create table nations_table(
     capital varchar(20),
     population int
     );
+
+insert into nations_table(name, capital, population) values("대한민국", "서울", 51200000);
+insert into nations_table(name, capital, population) values("프랑스", "파리", 67750000);
+insert into nations_table(name, capital, population) values("호주", "캔버라", 25690000);
 ```
